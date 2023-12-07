@@ -1,6 +1,5 @@
 package lab12.task2;
 
-import lab12.task2.Magazine;
 
 import java.util.*;
 import java.util.stream.Collectors;
@@ -59,25 +58,25 @@ public class Category {
     }
 
     public static void main(String[] args) {
-        lab12.task2.Book b1 = new lab12.task2.Magazine("A", 100, 2021, "ABC", 5000, "AAAA");
-        lab12.task2.Book b2 = new lab12.task2.Magazine("B", 100, 2022, "ABC", 5000, "BBBB");
-        lab12.task2.Book b3 = new Magazine("C", 100, 2023, "BCD", 5000, "CCCC");
+        Book b1 = new Magazine("A", 100, 2021, "ABC", 5000, "AAAA");
+        Book b2 = new Magazine("B", 100, 2022, "ABC", 5000, "BBBB");
+        Book b3 = new Magazine("C", 100, 2023, "BCD", 5000, "CCCC");
 
-        lab12.task2.Chapter c1 = new lab12.task2.Chapter("S", 30);
-        lab12.task2.Chapter c2 = new lab12.task2.Chapter("T", 400);
-        lab12.task2.Chapter c3 = new lab12.task2.Chapter("U", 50);
-        lab12.task2.Chapter c4 = new lab12.task2.Chapter("V", 20);
-        lab12.task2.Chapter c5 = new lab12.task2.Chapter("W", 10);
-        lab12.task2.Chapter c6 = new lab12.task2.Chapter("X", 60);
+        Chapter c1 = new Chapter("S", 30);
+        Chapter c2 = new Chapter("T", 400);
+        Chapter c3 = new Chapter("P", 50);
+        Chapter c4 = new Chapter("Z", 20);
+        Chapter c5 = new Chapter("R", 10);
+        Chapter c6 = new Chapter("Q", 60);
 
-        lab12.task2.Book b4 = new lab12.task2.RefBook("C", 121, 2021, "BCD", 5000, "CCCC");
-        lab12.task2.Book b5 = new lab12.task2.RefBook("E", 200, 2021, "BCD", 5000, "DDDD");
-        lab12.task2.Book b6 = new lab12.task2.RefBook("F", 300, 2022, "BCD", 5000, "EEEE");
+        Book b4 = new RefBook("C", 121, 2021, "BCD", 5000, "CCCC");
+        Book b5 = new RefBook("E", 200, 2021, "BCD", 5000, "DDDD");
+        Book b6 = new RefBook("F", 300, 2022, "BCD", 5000, "EEEE");
         b4.addChapter(c1, c2);
         b5.addChapter(c3, c4);
         b6.addChapter(c5, c6);
 
-        lab12.task2.Category category = new lab12.task2.Category();
+        Category category = new Category();
         category.add(b1, b2, b3, b4, b5, b6);
 
         //Only test using 100% Java 8
